@@ -1,0 +1,29 @@
+# Sample code from lab
+# Details removed because code was written for a class
+# Search algorithm to find the shortest path between destinations given a sample data set
+
+agenda = [[node1, 0]]
+    expanded = set()
+    
+    while agenda:
+        to_remove = agenda[0]
+        for paths in agenda:
+            if paths[-1] < to_remove[-1]:
+                # update information about to_remove
+        current = agenda.pop(agenda.index(to_remove))
+        if current[-2] in expanded:
+            # do behavior
+        elif current[-2] == node2:
+            # return outcome
+        else:
+            expanded.add(current[-2])
+        for subsequent in # selected indicies of map_rep:
+            if subsequent not in expanded:
+                next_distance = get_distance(map_rep, current[-2], subsequent) 
+                newlist = []
+                newlist += current[:-1]
+                newlist.append(subsequent)
+                # append information about the next possible path to newlist
+                agenda.append(newlist)
+               
+    return None
